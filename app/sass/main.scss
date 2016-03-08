@@ -1,0 +1,44 @@
+$icon-font-path: "./vendor/fonts/bootstrap/";
+@import "vars/sizes";
+@import "vars/colors";
+@import "mixins/mixins";
+
+body {
+	background-color: $background-color;
+}
+
+.App {
+	font-weight: 400;
+	h5 {
+		font-weight: 700;
+	}
+	a {
+		outline: 0;
+	}
+	.App__Content {
+		@include panelBoxShadow();
+		position: relative;
+		background-color: white;
+		margin-left: calc(#{$nav-sidebar-width} + 20px);
+		margin-right: 20px;
+		margin-top: calc(#{$header-height} + 20px);
+		margin-bottom: 20px;
+		padding: 30px 52px;
+		overflow-x: hidden;
+		min-width: $min-content-width;
+	}
+	.DefaultHeading {
+		color: #487186;
+		font-size: 30px;
+		margin-bottom: 14px;
+	}
+	.Select-group {
+		margin-top: 8px;
+	}
+	.Select-title {
+		display: inline-block;
+		margin-right: 12px;
+		width: 135px;
+		text-align: right;
+	}
+}

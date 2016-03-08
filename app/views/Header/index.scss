@@ -1,0 +1,19 @@
+@import "mixins/mixins";
+@import "vars/sizes";
+@import "vars/colors";
+$title-color: #55B2E5;
+$nav-text-color: #727272;
+
+.Header {
+	@include panelBoxShadow();
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: white;
+	z-index: 3;
+	padding: 0px 12px 0px 2px;
+	border: none;
+	border-radius: 0px;
+	width: 100%;
+	height: $header-height;
+}

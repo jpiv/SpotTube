@@ -1,0 +1,10 @@
+@mixin panelBoxShadow($xOffset: 0px, $yOffset: 0px) {
+	box-shadow: $xOffset $yOffset 8px 2px #e5e5e5;
+}
+
+// safari, chrome, ie or firefox
+@mixin browser($browser) {
+	html[data-browser^="#{$browser}"] & {
+		@content
+	}
+}
