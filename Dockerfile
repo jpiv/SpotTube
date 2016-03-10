@@ -10,7 +10,6 @@ ADD . /usr/src/app
 WORKDIR /usr/src/app
 
 # Install your application's dependencies
-RUN npm install
 RUN npm install ./server
 
 # define the port to expose
