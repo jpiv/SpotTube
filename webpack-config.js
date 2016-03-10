@@ -3,10 +3,10 @@ const path = require('path');
 const ncp =  require('ncp').ncp;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-ncp('./assets', './dist', function (err) {
-	if(err) console.error(err);
-	console.log('Assets copied.');
-});
+// ncp('./assets', './dist', function (err) {
+// 	if(err) console.error(err);
+// 	console.log('Assets copied.');
+// });
 
 
 module.exports = {
