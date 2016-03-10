@@ -17,4 +17,4 @@ RUN npm install ./server
 EXPOSE 3000
 
 # Run web server
-CMD node ./server/index.js
+CMD ['node', 'server/index.js']
