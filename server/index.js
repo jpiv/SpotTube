@@ -40,6 +40,6 @@ server.get('/', (req, res) => {
 // 		console.log('err', err)
 // 	});
 // });
-
+console.log('Server started');
 
 server.listen(port);
