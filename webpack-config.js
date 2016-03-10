@@ -1,6 +1,13 @@
 const autoprefixer = require('autoprefixer');
 const path = require('path');
+const ncp =  require('ncp').ncp;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+ncp('./assets', './dist', function (err) {
+	if(err) console.error(err);
+	console.log('Assets copied.');
+});
+
 
 module.exports = {
 	entry: ["./app/router.jsx"],
