@@ -29,7 +29,7 @@ const port = 3000;
 
 server.get('/', (req, res) => {
 	console.log('got request');
-	res.status(200).end();
+	res.status(200).json({ message: 'DEPLOYED' });
 });
 
 // db.sync({ force: true }).then(() => {
