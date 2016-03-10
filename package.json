@@ -1,5 +1,5 @@
 {
-  "name": "react-webpack-boilderplate",
+  "name": "SpotTube",
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
@@ -34,6 +34,7 @@
     "image-webpack-loader": "^1.6.3",
     "jquery": "^2.2.1",
     "json-loader": "^0.5.4",
+    "ncp": "^2.0.0",
     "node-sass": "^3.4.2",
     "postcss-loader": "^0.8.1",
     "react": "^0.14.7",
